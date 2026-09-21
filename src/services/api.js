@@ -1,15 +1,15 @@
 import axios from 'axios';
-import image from '../data/images/image.png';
-import imageCopy from '../data/images/image copy.png';
-import imageCopy2 from '../data/images/image copy 2.png';
-import imageCopy3 from '../data/images/image copy 3.png';
-import imageCopy4 from '../data/images/image copy 4.png';
-import imageCopy5 from '../data/images/image copy 5.png';
-import imageCopy6 from '../data/images/image copy 6.png';
-import imageCopy7 from '../data/images/image copy 7.png';
+import image from '../../data/images/image.png';
+import imageCopy from '../../data/images/image copy.png';
+import imageCopy2 from '../../data/images/image copy 2.png';
+import imageCopy3 from '../../data/images/image copy 3.png';
+import imageCopy4 from '../../data/images/image copy 4.png';
+import imageCopy5 from '../../data/images/image copy 5.png';
+import imageCopy6 from '../../data/images/image copy 6.png';
+import imageCopy7 from '../../data/images/image copy 7.png';
 
-// Base API URL targeting JSON-Server instance
-const API_URL = 'http://localhost:5000';
+// Base API URL targeting JSON-Server instance or a deployed API URL
+const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '');
 
 const apiClient = axios.create({
   baseURL: API_URL,
